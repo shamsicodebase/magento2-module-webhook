@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/Event/etc/events.xsd">
+    <event name="customer_save_after">
+        <observer name="customer_save_after_sweettooth_webhook_observer" instance="SweetTooth\Webhook\Model\Observer\Customer\Save" />
+    </event>
+    <event name="customer_delete_after">
+        <observer name="customer_delete_after_sweettooth_webhook_observer" instance="SweetTooth\Webhook\Model\Observer\Customer\Delete" />
+    </event>
+    <event name="catalog_product_save_after">
+        <observer name="product_save_after_sweettooth_webhook_observer" instance="SweetTooth\Webhook\Model\Observer\Product\Save" />
+    </event>
+    <event name="catalog_product_delete_after">
+        <observer name="product_delete_after_sweettooth_webhook_observer" instance="SweetTooth\Webhook\Model\Observer\Product\Delete" />
+    </event>
+    <event name="sales_order_place_after">
+        <observer name="sales_order_save_after_sweettooth_webhook_observer" instance="SweetTooth\Webhook\Model\Observer\Order\Save" />
+    </event>
+    <event name="sales_order_invoice_save_after">
+        <observer name="sales_order_invoice_save_after_sweettooth_webhook_observer" instance="SweetTooth\Webhook\Model\Observer\Order\Invoice" />
+    </event>
+    <event name="sales_order_shipment_save_after">
+        <observer name="sales_order_shipment_save_after_sweettooth_webhook_observer" instance="SweetTooth\Webhook\Model\Observer\Order\Shipment" />
+    </event>
+    <event name="sales_order_delete_after">
+        <observer name="sales_order_delete_after_sweettooth_webhook_observer" instance="SweetTooth\Webhook\Model\Observer\Order\Delete" />
+    </event>
+</config>
